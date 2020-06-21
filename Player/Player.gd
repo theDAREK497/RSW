@@ -15,6 +15,7 @@ enum {
 
 var state = MOVE
 var velocity = Vector2.ZERO
+var analog_velocity = Vector2.ZERO
 var roll_vector = Vector2.DOWN
 var stats = PlayerStats
 
@@ -43,9 +44,14 @@ func _physics_process(delta):
 			attack_state()
 	
 func move_state(delta):
-	var input_vector = Vector2.ZERO
-	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
-	input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
+	var input_vector = Vector2.ZERO	
+	if analog_velocity != Vector2.ZERO:
+		input_vector.x = analog_velocity.x
+		input_vector.y = analog_velocity.y
+	else: 
+		input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+		input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
+	
 	input_vector = input_vector.normalized()
 	
 	if input_vector != Vector2.ZERO:
@@ -100,3 +106,15 @@ func _on_Hurtbox_invincibility_started():
 
 func _on_Hurtbox_invincibility_ended():
 	blinkAnimationPlayer.play("Stop")
+
+func analog_force_change(inForce, inAnalog):
+	if(inAnalog == "Left_Analog"): 
+		analog_velocity.x = inForce.x
+		analog_velocity.y = -inForce.y
+
+
+func _on_Attack_pressed():
+	state = ATTACK
+
+func _on_Roll_pressed():
+	state = ROLL

@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Menu/Scenes/title_screen.gd" type="Script" id=1]
-[ext_resource path="res://Menu/Scenes/buttons/NewGameButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Menu/Scenes/buttons/Button.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Menu/Scenes/fade_in/FadeIn.tscn" type="PackedScene" id=8]
 
 [sub_resource type="Theme" id=1]
@@ -16,14 +16,23 @@ __meta__ = {
 }
 
 [node name="Buttons" type="VBoxContainer" parent="."]
-margin_right = 300.0
-margin_bottom = 60.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="NewGameButton" parent="Buttons" instance=ExtResource( 3 )]
-rect_scale = Vector2( 1, 1 )
+[node name="PLay" parent="Buttons" instance=ExtResource( 2 )]
+margin_right = 360.0
+scene_to_load = "res://Levels/LevelOne.tscn"
+scene_name = "strPlay"
+
+[node name="Settings" parent="Buttons" instance=ExtResource( 2 )]
+margin_top = 64.0
+margin_right = 360.0
+margin_bottom = 124.0
+scene_to_load = "res://Menu/Scenes/SettingsScreen.tscn"
+scene_name = "strSettings"
 
 [node name="FadeIn" parent="." instance=ExtResource( 8 )]
 [connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]

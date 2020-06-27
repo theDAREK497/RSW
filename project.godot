@@ -20,7 +20,7 @@ gdinv/LoadOnReady=true
 
 [application]
 
-config/name="Red Steel Water"
+config/name="Red Paladin"
 run/main_scene="res://Menu/Scenes/TitleScreen.tscn"
 config/icon="res://icon.png"
 
@@ -39,7 +39,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PoolStringArray(  )
+enabled=PoolStringArray( "Dialogbox" )
 
 [importer_defaults]
 
@@ -115,3 +115,8 @@ roll={
 2d_physics/layer_4="EnemyHurtbox"
 2d_physics/layer_5="Enemy"
 2d_physics/layer_6="SoftCollisions"
+
+[locale]
+
+translations=PoolStringArray( "res://Translation/localization.ru.translation", "res://Translation/localization.en.translation" )
+locale_filter=[ 0, [  ] ]

@@ -18,6 +18,7 @@ var velocity = Vector2.ZERO
 var analog_velocity = Vector2.ZERO
 var roll_vector = Vector2.DOWN
 var stats = PlayerStats
+var current_stage = "NONE"
 
 onready var animationPlayer = $AnimationPlayer
 onready var animationTree = $AnimationTree
@@ -118,3 +119,11 @@ func _on_Attack_pressed():
 
 func _on_Roll_pressed():
 	state = ROLL
+
+func _on_Area2D_body_entered(body, extra_arg_0):
+	if body.is_in_group("Player"):
+		go_next_stage(extra_arg_0)
+
+func go_next_stage(next_stage):
+	current_stage = get_tree().get_current_scene().get_name()
+	get_tree().change_scene(next_stage)

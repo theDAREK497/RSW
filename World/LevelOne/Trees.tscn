@@ -1,0 +1,1172 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://World/Tree.tscn" type="PackedScene" id=1]
+
+[node name="Trees" type="YSort"]
+
+[node name="Tree" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 232, 32 )
+
+[node name="Tree2" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 104, 160 )
+
+[node name="Tree3" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 22.1699, -8.93065 )
+
+[node name="Tree4" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 102.652, -111.59 )
+
+[node name="Tree5" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 166.678, -27.8114 )
+
+[node name="Tree6" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 192.56, -109.546 )
+
+[node name="Tree7" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 298.816, -32.2387 )
+
+[node name="Tree8" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 277.36, -91.8371 )
+
+[node name="Tree9" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 365.566, 146.216 )
+
+[node name="Tree10" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 275.658, 241.233 )
+
+[node name="Tree11" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 470.523, 151.792 )
+
+[node name="Tree12" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 536.298, 161.32 )
+
+[node name="Tree13" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 468.986, 218.181 )
+
+[node name="Tree14" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 379.545, 29.1558 )
+
+[node name="Tree15" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 501.566, 76.489 )
+
+[node name="Tree16" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 371.861, -115.61 )
+
+[node name="Tree17" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 368.173, -185.073 )
+
+[node name="Tree20" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 470.615, -112.45 )
+
+[node name="Tree21" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 509.722, -177.396 )
+
+[node name="Tree22" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 450.363, -199.044 )
+
+[node name="Tree23" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 513.214, -238.85 )
+
+[node name="Tree25" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 447.544, -264.643 )
+
+[node name="Tree27" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 447.57, -315.667 )
+
+[node name="Tree29" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 453.157, -347.791 )
+
+[node name="Tree31" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 451.062, -382.708 )
+
+[node name="Tree135" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 478.988, -549.297 )
+
+[node name="Tree134" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 454.546, -568.387 )
+
+[node name="Tree133" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 484.575, -581.421 )
+
+[node name="Tree132" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 457.34, -597.019 )
+
+[node name="Tree131" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 482.48, -615.874 )
+
+[node name="Tree130" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 459.435, -631.936 )
+
+[node name="Tree145" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 484.084, -430.23 )
+
+[node name="Tree144" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 459.642, -449.321 )
+
+[node name="Tree143" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 489.671, -462.354 )
+
+[node name="Tree142" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 462.436, -477.953 )
+
+[node name="Tree141" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 487.576, -496.808 )
+
+[node name="Tree140" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 464.531, -512.87 )
+
+[node name="Tree222" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 525.781, -508.064 )
+
+[node name="Tree221" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 501.339, -527.154 )
+
+[node name="Tree220" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 531.367, -540.188 )
+
+[node name="Tree219" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 504.132, -555.786 )
+
+[node name="Tree218" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 529.272, -574.641 )
+
+[node name="Tree217" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 506.227, -590.703 )
+
+[node name="Tree228" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 651.333, -608.135 )
+
+[node name="Tree227" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 626.891, -627.225 )
+
+[node name="Tree226" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 656.92, -640.259 )
+
+[node name="Tree225" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 629.685, -655.857 )
+
+[node name="Tree224" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 654.825, -674.713 )
+
+[node name="Tree223" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 631.78, -690.774 )
+
+[node name="Tree234" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 807.926, -647.052 )
+
+[node name="Tree233" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 783.484, -666.142 )
+
+[node name="Tree240" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 858.889, -636.396 )
+
+[node name="Tree239" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 834.447, -655.486 )
+
+[node name="Tree238" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 864.475, -668.52 )
+
+[node name="Tree246" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 909.851, -632.69 )
+
+[node name="Tree245" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 885.409, -651.78 )
+
+[node name="Tree244" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 915.438, -664.813 )
+
+[node name="Tree242" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 937.376, -701.52 )
+
+[node name="Tree243" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 936.875, -734.065 )
+
+[node name="Tree252" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 800.977, -553.467 )
+
+[node name="Tree251" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 776.535, -572.557 )
+
+[node name="Tree250" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 806.564, -585.59 )
+
+[node name="Tree249" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 779.328, -601.189 )
+
+[node name="Tree248" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 804.469, -620.044 )
+
+[node name="Tree247" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 781.423, -636.106 )
+
+[node name="Tree258" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 853.329, -544.201 )
+
+[node name="Tree257" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 828.887, -563.291 )
+
+[node name="Tree256" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 858.916, -576.324 )
+
+[node name="Tree255" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 831.681, -591.923 )
+
+[node name="Tree254" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 856.821, -610.778 )
+
+[node name="Tree253" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 833.776, -626.84 )
+
+[node name="Tree264" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 771.79, -486.752 )
+
+[node name="Tree263" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 747.348, -505.842 )
+
+[node name="Tree262" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 777.376, -518.876 )
+
+[node name="Tree261" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 750.141, -534.474 )
+
+[node name="Tree260" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 775.281, -553.33 )
+
+[node name="Tree259" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 752.236, -569.391 )
+
+[node name="Tree270" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 740.749, -421.891 )
+
+[node name="Tree269" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 716.307, -440.981 )
+
+[node name="Tree268" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 746.336, -454.015 )
+
+[node name="Tree267" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 719.1, -469.613 )
+
+[node name="Tree266" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 744.241, -488.469 )
+
+[node name="Tree265" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 721.195, -504.53 )
+
+[node name="Tree276" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 925.14, -337.572 )
+
+[node name="Tree275" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 900.698, -356.662 )
+
+[node name="Tree274" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 930.726, -369.695 )
+
+[node name="Tree273" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 903.491, -385.294 )
+
+[node name="Tree272" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 928.631, -404.149 )
+
+[node name="Tree271" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 905.586, -420.211 )
+
+[node name="Tree282" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1132.23, -528.912 )
+
+[node name="Tree365" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1280.02, -603.039 )
+
+[node name="Tree367" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1239.25, -590.067 )
+
+[node name="Tree368" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1275.39, -554.393 )
+
+[node name="Tree369" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1233.23, -527.985 )
+
+[node name="Tree370" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1280.95, -499.724 )
+
+[node name="Tree371" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1289.29, -445.519 )
+
+[node name="Tree372" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1278.17, -378.342 )
+
+[node name="Tree383" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1254.08, -344.058 )
+
+[node name="Tree385" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1225.35, -428.377 )
+
+[node name="Tree281" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1107.79, -548.002 )
+
+[node name="Tree280" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1137.82, -561.036 )
+
+[node name="Tree279" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1110.58, -576.634 )
+
+[node name="Tree278" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1135.72, -595.489 )
+
+[node name="Tree277" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1112.68, -611.551 )
+
+[node name="Tree288" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1086.83, -534.008 )
+
+[node name="Tree287" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1062.39, -553.098 )
+
+[node name="Tree286" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1092.42, -566.132 )
+
+[node name="Tree285" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1065.18, -581.73 )
+
+[node name="Tree284" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1090.32, -600.586 )
+
+[node name="Tree283" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1067.28, -616.647 )
+
+[node name="Tree294" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1059.03, -459.418 )
+
+[node name="Tree293" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1034.59, -478.508 )
+
+[node name="Tree292" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1064.62, -491.542 )
+
+[node name="Tree291" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1037.38, -507.14 )
+
+[node name="Tree290" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1062.52, -525.995 )
+
+[node name="Tree289" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1039.48, -542.057 )
+
+[node name="Tree300" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1008.07, -428.377 )
+
+[node name="Tree299" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 983.627, -447.467 )
+
+[node name="Tree298" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1013.66, -460.501 )
+
+[node name="Tree297" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 986.421, -476.099 )
+
+[node name="Tree296" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1011.56, -494.955 )
+
+[node name="Tree295" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 988.516, -511.017 )
+
+[node name="Tree306" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1116.48, -276.417 )
+
+[node name="Tree305" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1092.04, -295.507 )
+
+[node name="Tree304" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1122.07, -308.541 )
+
+[node name="Tree303" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1094.83, -324.139 )
+
+[node name="Tree302" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1119.97, -342.994 )
+
+[node name="Tree301" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1096.93, -359.056 )
+
+[node name="Tree312" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1109.07, -188.854 )
+
+[node name="Tree311" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1084.63, -207.945 )
+
+[node name="Tree310" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1114.65, -220.978 )
+
+[node name="Tree309" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1087.42, -236.577 )
+
+[node name="Tree308" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1112.56, -255.432 )
+
+[node name="Tree307" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1089.51, -271.494 )
+
+[node name="Tree318" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1057.18, -201.827 )
+
+[node name="Tree317" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1032.74, -220.917 )
+
+[node name="Tree316" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1062.77, -233.951 )
+
+[node name="Tree315" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1035.53, -249.549 )
+
+[node name="Tree314" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1060.67, -268.404 )
+
+[node name="Tree313" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1037.62, -284.466 )
+
+[node name="Tree324" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1026.6, -140.209 )
+
+[node name="Tree323" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1002.16, -159.299 )
+
+[node name="Tree322" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1032.19, -172.332 )
+
+[node name="Tree321" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1004.95, -187.931 )
+
+[node name="Tree320" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1030.09, -206.786 )
+
+[node name="Tree319" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1007.05, -222.848 )
+
+[node name="Tree330" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 977.029, -113.338 )
+
+[node name="Tree329" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 952.587, -132.428 )
+
+[node name="Tree328" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 982.615, -145.461 )
+
+[node name="Tree327" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 955.38, -161.06 )
+
+[node name="Tree326" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 980.52, -179.915 )
+
+[node name="Tree325" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 957.475, -195.977 )
+
+[node name="Tree336" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 949.231, -41.0639 )
+
+[node name="Tree335" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 924.789, -60.154 )
+
+[node name="Tree334" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 954.818, -73.1877 )
+
+[node name="Tree333" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 927.583, -88.7861 )
+
+[node name="Tree332" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 952.723, -107.641 )
+
+[node name="Tree331" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 929.677, -123.703 )
+
+[node name="Tree342" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 917.727, 40.0125 )
+
+[node name="Tree341" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 893.285, 20.9223 )
+
+[node name="Tree340" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 923.314, 7.88866 )
+
+[node name="Tree339" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 896.078, -7.70973 )
+
+[node name="Tree338" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 921.219, -26.565 )
+
+[node name="Tree337" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 898.173, -42.627 )
+
+[node name="Tree348" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 913.094, 131.745 )
+
+[node name="Tree347" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 888.652, 112.654 )
+
+[node name="Tree346" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 918.681, 99.6207 )
+
+[node name="Tree345" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 891.446, 84.0224 )
+
+[node name="Tree344" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 916.586, 65.1671 )
+
+[node name="Tree343" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 893.54, 49.1051 )
+
+[node name="Tree354" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 873.251, 38.1593 )
+
+[node name="Tree353" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 848.809, 19.0692 )
+
+[node name="Tree352" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 878.838, 6.03549 )
+
+[node name="Tree351" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 851.602, -9.5629 )
+
+[node name="Tree350" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 876.742, -28.4181 )
+
+[node name="Tree349" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 853.697, -44.4801 )
+
+[node name="Tree360" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 824.605, 31.6732 )
+
+[node name="Tree359" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 800.163, 12.5831 )
+
+[node name="Tree358" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 830.192, -0.450607 )
+
+[node name="Tree357" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 802.957, -16.049 )
+
+[node name="Tree356" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 828.097, -34.9042 )
+
+[node name="Tree355" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 805.051, -50.9662 )
+
+[node name="Tree366" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 775.496, 26.1137 )
+
+[node name="Tree364" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 781.083, -6.01013 )
+
+[node name="Tree363" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 753.847, -21.6085 )
+
+[node name="Tree362" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 778.988, -40.4637 )
+
+[node name="Tree361" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 755.942, -56.5258 )
+
+[node name="Tree378" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 862.595, 181.317 )
+
+[node name="Tree377" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 838.153, 162.227 )
+
+[node name="Tree376" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 868.182, 149.193 )
+
+[node name="Tree375" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 840.947, 133.595 )
+
+[node name="Tree374" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 866.087, 114.74 )
+
+[node name="Tree373" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 843.041, 98.6775 )
+
+[node name="Tree384" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 834.334, 252.201 )
+
+[node name="Tree382" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 839.921, 220.077 )
+
+[node name="Tree381" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 737.633, 202.163 )
+
+[node name="Tree387" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 745.508, 165.562 )
+
+[node name="Tree389" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 789.521, 135.912 )
+
+[node name="Tree439" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 778.866, 192.433 )
+
+[node name="Tree440" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 811.759, 207.722 )
+
+[node name="Tree441" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 752.921, 130.815 )
+
+[node name="Tree442" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 809.443, 100.701 )
+
+[node name="Tree444" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 777.013, 163.709 )
+
+[node name="Tree445" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 763.114, 215.598 )
+
+[node name="Tree380" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 837.826, 185.623 )
+
+[node name="Tree379" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 814.78, 169.561 )
+
+[node name="Tree390" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 826.458, 336.057 )
+
+[node name="Tree388" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 832.045, 303.933 )
+
+[node name="Tree386" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 829.95, 269.48 )
+
+[node name="Tree396" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 994.634, 328.644 )
+
+[node name="Tree395" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 970.192, 309.554 )
+
+[node name="Tree394" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1000.22, 296.52 )
+
+[node name="Tree393" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 972.985, 280.922 )
+
+[node name="Tree392" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 998.125, 262.067 )
+
+[node name="Tree391" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 975.08, 246.005 )
+
+[node name="Tree402" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1029.84, 263.783 )
+
+[node name="Tree401" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1005.4, 244.693 )
+
+[node name="Tree400" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1035.43, 231.659 )
+
+[node name="Tree399" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1008.2, 216.061 )
+
+[node name="Tree398" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1033.34, 197.206 )
+
+[node name="Tree397" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1010.29, 181.144 )
+
+[node name="Tree408" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1061.81, 191.046 )
+
+[node name="Tree407" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1037.37, 171.956 )
+
+[node name="Tree406" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1067.4, 158.922 )
+
+[node name="Tree405" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1040.16, 143.324 )
+
+[node name="Tree404" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1065.3, 124.469 )
+
+[node name="Tree403" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1042.26, 108.407 )
+
+[node name="Tree414" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1093.78, 109.506 )
+
+[node name="Tree413" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1069.34, 90.4164 )
+
+[node name="Tree412" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1099.37, 77.3827 )
+
+[node name="Tree411" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1072.13, 61.7843 )
+
+[node name="Tree410" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1097.27, 42.9291 )
+
+[node name="Tree409" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1074.22, 26.8671 )
+
+[node name="Tree420" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1117.87, 29.3567 )
+
+[node name="Tree419" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1093.43, 10.2666 )
+
+[node name="Tree418" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1123.46, -2.76706 )
+
+[node name="Tree417" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1096.22, -18.3654 )
+
+[node name="Tree416" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1121.36, -37.2207 )
+
+[node name="Tree415" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1098.32, -53.2827 )
+
+[node name="Tree426" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1171.61, 1.55908 )
+
+[node name="Tree425" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1147.17, -17.531 )
+
+[node name="Tree424" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1177.2, -30.5647 )
+
+[node name="Tree423" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1149.96, -46.1631 )
+
+[node name="Tree422" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1175.1, -65.0183 )
+
+[node name="Tree421" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1152.06, -81.0803 )
+
+[node name="Tree432" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1225.82, -14.1929 )
+
+[node name="Tree431" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1201.38, -33.2829 )
+
+[node name="Tree430" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1231.4, -46.3166 )
+
+[node name="Tree429" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1204.17, -61.915 )
+
+[node name="Tree428" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1229.31, -80.7702 )
+
+[node name="Tree427" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1206.26, -96.8323 )
+
+[node name="Tree438" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1158.18, -187.001 )
+
+[node name="Tree437" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1133.73, -206.091 )
+
+[node name="Tree436" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1163.76, -219.125 )
+
+[node name="Tree435" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1136.53, -234.723 )
+
+[node name="Tree434" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1161.67, -253.579 )
+
+[node name="Tree433" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1138.62, -269.641 )
+
+[node name="Tree443" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1210.64, -330.717 )
+
+[node name="Tree462" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 961.277, -666.51 )
+
+[node name="Tree461" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 945.597, -777.477 )
+
+[node name="Tree466" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 983.149, -764.459 )
+
+[node name="Tree460" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 966.864, -698.634 )
+
+[node name="Tree463" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 990.692, -715.108 )
+
+[node name="Tree464" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 989.856, -686.676 )
+
+[node name="Tree465" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1027.07, -748.976 )
+
+[node name="Tree468" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1058.01, -702.146 )
+
+[node name="Tree469" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1209.79, -757.338 )
+
+[node name="Tree485" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1106.7, -485.287 )
+
+[node name="Tree486" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 980.782, -426.499 )
+
+[node name="Tree487" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 931.925, -430.074 )
+
+[node name="Tree488" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 956.949, -416.568 )
+
+[node name="Tree489" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 957.347, -443.182 )
+
+[node name="Tree490" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 960.127, -470.193 )
+
+[node name="Tree491" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 958.936, -391.544 )
+
+[node name="Tree492" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 707.498, -419.746 )
+
+[node name="Tree493" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 687.637, -438.813 )
+
+[node name="Tree494" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 693.992, -466.618 )
+
+[node name="Tree495" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 755.164, -606.041 )
+
+[node name="Tree496" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 655.462, -695.017 )
+
+[node name="Tree497" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 676.118, -652.118 )
+
+[node name="Tree498" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 608.194, -676.745 )
+
+[node name="Tree499" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 606.605, -645.365 )
+
+[node name="Tree500" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 678.501, -621.929 )
+
+[node name="Tree567" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1019.71, 328.212 )
+
+[node name="Tree573" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1094.78, 317.884 )
+
+[node name="Tree579" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1170.25, 311.131 )
+
+[node name="Tree585" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1247.71, 302.79 )
+
+[node name="Tree591" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1325.17, 296.037 )
+
+[node name="Tree597" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1324.37, 233.674 )
+
+[node name="Tree603" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1076.11, 244.796 )
+
+[node name="Tree139" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 442.184, -491.919 )
+
+[node name="Tree155" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 678.204, -343.595 )
+
+[node name="Tree154" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 653.762, -362.685 )
+
+[node name="Tree153" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 683.791, -375.718 )
+
+[node name="Tree198" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 712.488, -198.584 )
+
+[node name="Tree197" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 688.046, -217.674 )
+
+[node name="Tree196" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 718.074, -230.707 )
+
+[node name="Tree201" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 749.088, -229.624 )
+
+[node name="Tree200" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 724.646, -248.714 )
+
+[node name="Tree199" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 754.675, -261.748 )
+
+[node name="Tree204" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 825.068, -271.321 )
+
+[node name="Tree203" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 800.626, -290.411 )
+
+[node name="Tree202" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 830.655, -303.444 )
+
+[node name="Tree207" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 683.764, -68.3983 )
+
+[node name="Tree206" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 659.322, -87.4883 )
+
+[node name="Tree604" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 649.391, -118.074 )
+
+[node name="Tree605" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 711.754, -84.7078 )
+
+[node name="Tree205" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 689.35, -100.522 )
+
+[node name="Tree210" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 718.974, -28.555 )
+
+[node name="Tree209" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 696.916, -47.6451 )
+
+[node name="Tree208" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 724.56, -60.6787 )
+
+[node name="Tree216" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 770.863, -284.293 )
+
+[node name="Tree215" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 776.998, -251.494 )
+
+[node name="Tree214" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 789.885, -266.844 )
+
+[node name="Tree152" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 656.556, -391.317 )
+
+[node name="Tree151" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 681.696, -410.172 )
+
+[node name="Tree150" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 658.651, -426.234 )
+
+[node name="Tree149" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 636.304, -405.284 )
+
+[node name="Tree148" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 630.019, -373.858 )
+
+[node name="Tree165" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 682.374, -118.897 )
+
+[node name="Tree164" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 657.932, -137.987 )
+
+[node name="Tree163" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 687.96, -151.021 )
+
+[node name="Tree162" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 660.725, -166.619 )
+
+[node name="Tree161" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 685.865, -185.475 )
+
+[node name="Tree160" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 662.82, -201.536 )
+
+[node name="Tree159" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 640.473, -180.586 )
+
+[node name="Tree158" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 634.188, -149.161 )
+
+[node name="Tree566" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1066.76, 334.655 )
+
+[node name="Tree606" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1097.91, 356.364 )
+
+[node name="Tree607" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1071.01, 396.479 )
+
+[node name="Tree565" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1042.32, 315.565 )
+
+[node name="Tree564" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1072.34, 302.531 )
+
+[node name="Tree563" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1045.11, 286.933 )
+
+[node name="Tree572" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1141.83, 324.328 )
+
+[node name="Tree571" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1117.39, 305.237 )
+
+[node name="Tree570" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1147.42, 292.204 )
+
+[node name="Tree569" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1120.18, 276.605 )
+
+[node name="Tree578" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1217.3, 317.575 )
+
+[node name="Tree577" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1192.86, 298.485 )
+
+[node name="Tree576" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1222.89, 285.451 )
+
+[node name="Tree575" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1195.65, 269.853 )
+
+[node name="Tree584" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1294.76, 309.233 )
+
+[node name="Tree583" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1270.32, 290.143 )
+
+[node name="Tree582" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1300.35, 277.11 )
+
+[node name="Tree581" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1273.11, 261.511 )
+
+[node name="Tree590" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1372.22, 302.481 )
+
+[node name="Tree589" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1347.78, 283.391 )
+
+[node name="Tree588" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1377.8, 270.357 )
+
+[node name="Tree587" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1350.57, 254.758 )
+
+[node name="Tree596" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1371.42, 240.118 )
+
+[node name="Tree595" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1346.98, 221.028 )
+
+[node name="Tree594" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1377.01, 207.994 )
+
+[node name="Tree593" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1349.77, 192.396 )
+
+[node name="Tree602" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1145.01, 80.834 )
+
+[node name="Tree601" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1346.58, 119.737 )
+
+[node name="Tree600" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1373.43, 31.2328 )
+
+[node name="Tree599" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1297.74, 49.7949 )
+
+[node name="Tree170" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 620.197, 51.4218 )
+
+[node name="Tree562" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1018.57, 304.392 )
+
+[node name="Tree568" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1093.65, 294.064 )
+
+[node name="Tree574" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1169.12, 287.311 )
+
+[node name="Tree580" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1246.57, 278.97 )
+
+[node name="Tree586" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1324.03, 272.217 )
+
+[node name="Tree592" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1323.24, 209.854 )
+
+[node name="Tree598" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1243, 19.1905 )
+
+[node name="Tree181" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 692.815, -2.47375 )
+
+[node name="Tree180" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 669.77, -18.5355 )
+
+[node name="Tree195" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 898.732, -264.835 )
+
+[node name="Tree194" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 874.29, -283.925 )
+
+[node name="Tree193" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 904.319, -296.958 )
+
+[node name="Tree192" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 877.083, -312.557 )
+
+[node name="Tree191" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 902.224, -331.412 )
+
+[node name="Tree190" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 879.178, -347.474 )
+
+[node name="Tree189" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 856.832, -326.524 )
+
+[node name="Tree188" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 850.546, -295.098 )
+
+[node name="Tree127" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 438.803, -636.58 )
+
+[node name="Tree126" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 455.876, -663.319 )
+
+[node name="Tree137" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 443.899, -517.514 )
+
+[node name="Tree136" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 460.972, -544.252 )
+
+[node name="Tree147" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 638.019, -430.878 )
+
+[node name="Tree146" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 655.092, -457.617 )
+
+[node name="Tree157" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 642.188, -206.181 )
+
+[node name="Tree156" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 659.261, -232.919 )
+
+[node name="Tree167" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 599.565, 46.7775 )
+
+[node name="Tree166" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 616.639, 20.039 )
+
+[node name="Tree177" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 649.138, -23.1798 )
+
+[node name="Tree176" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 666.211, -49.9183 )
+
+[node name="Tree187" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 858.546, -352.118 )
+
+[node name="Tree186" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 875.62, -378.857 )

@@ -19,6 +19,7 @@ var analog_velocity = Vector2.ZERO
 var roll_vector = Vector2.DOWN
 var stats = PlayerStats
 var current_stage = "NONE"
+var next_stage = "NONE"
 var is_active = true
 
 onready var animationPlayer = $AnimationPlayer
@@ -123,11 +124,13 @@ func _on_Roll_pressed():
 
 func _on_Area2D_body_entered(body, extra_arg_0):
 	if body.is_in_group("Player"):
-		go_next_stage(extra_arg_0)
+		go_next_stage()
+		next_stage = extra_arg_0
 
-func go_next_stage(next_stage):
-	current_stage = get_tree().get_current_scene().get_name()
-	get_tree().change_scene(next_stage)
+func go_next_stage():
+	get_node("/root/World/Camera2D/FadeIn").show() 
+	get_node("/root/World/Camera2D/FadeIn").fade_in()
+	
 
 func deactived():
 	is_active = false
@@ -136,3 +139,12 @@ func deactived():
 	
 func activated():
 	is_active = true
+
+func _on_FadeIn_fade_finished():
+	current_stage = get_tree().get_current_scene().get_name()
+	get_tree().change_scene(next_stage)
+	# warning-ignore:return_value_discarded
+	get_node("/root/World/Camera2D/FadeIn").hide()
+
+func _on_Coin_coin_collected(value):
+	stats.coins += 1

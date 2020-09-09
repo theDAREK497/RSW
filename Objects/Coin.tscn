@@ -1,0 +1,64 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Objects/coin.png" type="Texture" id=1]
+
+[sub_resource type="GDScript" id=9]
+script/source = "extends Area2D
+
+export(int) var value
+signal coin_collected(value)
+
+func _on_Coin_body_entered(body):
+	if body.is_in_group(\"Player\"):
+		emit_signal(\"coin_collected\", 1)
+		queue_free()
+"
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 5.42349
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 200, 300 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 200, 0, 200, 300 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 400, 0, 200, 300 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 1 )
+region = Rect2( 600, 0, 200, 300 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 1 )
+region = Rect2( 800, 0, 200, 300 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 1 )
+region = Rect2( 1000, 0, 200, 300 )
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Coin" type="Area2D"]
+script = SubResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -3.94881e-06, 1.15624 )
+scale = Vector2( 0.05, 0.05 )
+frames = SubResource( 8 )
+frame = 1
+playing = true
+[connection signal="body_entered" from="." to="." method="_on_Coin_body_entered"]

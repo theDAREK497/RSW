@@ -15,4 +15,5 @@ func _on_Button_pressed(scene_to_load):
 
 func _on_FadeIn_fade_finished():
 	$FadeIn.hide()
+	# warning-ignore:return_value_discarded
 	get_tree().change_scene(scene_path_to_load)

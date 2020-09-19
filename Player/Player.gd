@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
 const PlayerHurtSound = preload("res://Player/PlayerHurtSound.tscn")
+const MINUTE = 60000
 
 export var ACCELERATION = 500
 export var MAX_SPEED = 80
@@ -10,7 +11,8 @@ export var FRICTION = 500
 enum {
 	MOVE,
 	ROLL,
-	ATTACK
+	ATTACK,
+	BLOCK
 }
 
 var state = MOVE
@@ -21,6 +23,7 @@ var stats = PlayerStats
 var current_stage = "NONE"
 var next_stage = "NONE"
 var is_active = true
+var shield_timer = 0
 
 onready var animationPlayer = $AnimationPlayer
 onready var animationTree = $AnimationTree
@@ -45,7 +48,10 @@ func _physics_process(delta):
 		
 		ATTACK:
 			attack_state()
-	
+		
+		BLOCK:
+			move_state(delta)
+
 func move_state(delta):
 	if is_active == true:
 		var input_vector = Vector2.ZERO
@@ -58,6 +64,20 @@ func move_state(delta):
 		
 		input_vector = input_vector.normalized()
 		
+		if Input.is_action_just_pressed("block"):
+			state = BLOCK
+		
+		if Input.is_action_just_released("block"):
+			state = MOVE
+		
+		if (state == BLOCK) and (stats.armor <= 0):
+			state = MOVE
+			stats.armor = 0
+		
+		if shield_timer == MINUTE/100:
+			stats.armor += 1
+			shield_timer = 0
+		
 		if input_vector != Vector2.ZERO:
 			roll_vector = input_vector
 			swordHitbox.knockback_vector = input_vector
@@ -65,13 +85,25 @@ func move_state(delta):
 			animationTree.set("parameters/Run/blend_position", input_vector)
 			animationTree.set("parameters/Attack/blend_position", input_vector)
 			animationTree.set("parameters/Roll/blend_position", input_vector)
-			animationState.travel("Run")
-			velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELERATION * delta)
+			animationTree.set("parameters/RunBlock/blend_position", input_vector)
+			animationTree.set("parameters/IdleBlock/blend_position", input_vector)
+			if state == BLOCK:
+				animationState.travel("RunBlock")
+				velocity = velocity.move_toward(input_vector * MAX_SPEED/2, ACCELERATION * delta)
+			else:
+				animationState.travel("Run")
+				velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELERATION * delta)
 		else:
-			animationState.travel("Idle")
-			velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
+			if state == BLOCK:
+				animationState.travel("IdleBlock")
+				velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
+			else:
+				animationState.travel("Idle")
+				velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 		
 		move()
+		
+		shield_timer += 1
 		
 		if Input.is_action_just_pressed("roll"):
 			state = ROLL
@@ -99,7 +131,10 @@ func attack_animation_finished():
 	state = MOVE
 
 func _on_Hurtbox_area_entered(area):
-	stats.health -= area.damage
+	if state == BLOCK:
+		stats.armor -= area.damage
+	else:
+		stats.health -= area.damage
 	hurtbox.start_invincibility(0.6)
 	hurtbox.create_hit_effect()
 	var playerHurtSound = PlayerHurtSound.instance()
@@ -122,6 +157,12 @@ func _on_Attack_pressed():
 func _on_Roll_pressed():
 	state = ROLL
 
+func _on_Block_pressed():
+	state = BLOCK
+
+func _on_Block_released():
+	state = MOVE
+
 func _on_Area2D_body_entered(body, extra_arg_0):
 	if body.is_in_group("Player"):
 		go_next_stage()
@@ -131,7 +172,6 @@ func go_next_stage():
 	get_node("/root/World/Camera2D/FadeIn").show() 
 	get_node("/root/World/Camera2D/FadeIn").fade_in()
 	
-
 func deactived():
 	is_active = false
 	velocity.x = 0
@@ -142,6 +182,7 @@ func activated():
 
 func _on_FadeIn_fade_finished():
 	current_stage = get_tree().get_current_scene().get_name()
+	# warning-ignore:return_value_discarded
 	get_tree().change_scene(next_stage)
 	# warning-ignore:return_value_discarded
 	get_node("/root/World/Camera2D/FadeIn").hide()

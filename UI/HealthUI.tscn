@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://UI/HealthUI.gd" type="Script" id=1]
 [ext_resource path="res://UI/HeartUIFull.png" type="Texture" id=2]
 [ext_resource path="res://UI/HeartUIEmpty.png" type="Texture" id=3]
 [ext_resource path="res://Objects/coin.png" type="Texture" id=4]
+[ext_resource path="res://UI/ShieldUIFull.png" type="Texture" id=5]
+[ext_resource path="res://UI/ShieldUIEmpty.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://UI/Fonts/LcdSolid-VPzB.ttf"
@@ -41,8 +43,29 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="ArmorUIEmpty" type="TextureRect" parent="."]
+margin_top = 12.1237
+margin_right = 60.0
+margin_bottom = 23.1237
+texture = ExtResource( 6 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArmorUIFull" type="TextureRect" parent="."]
+margin_top = 12.1237
+margin_right = 15.0
+margin_bottom = 23.1237
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="CoinUI" type="Sprite" parent="."]
-position = Vector2( 7, 32 )
+position = Vector2( 6.90635, 32.7492 )
 scale = Vector2( 0.08, 0.08 )
 texture = ExtResource( 4 )
 vframes = 2

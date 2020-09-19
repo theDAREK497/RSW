@@ -1,4 +1,4 @@
-[gd_scene load_steps=104 format=2]
+[gd_scene load_steps=109 format=2]
 
 [ext_resource path="res://World/LevelOne/TreeBlocks.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/LevelOne/Trees.tscn" type="PackedScene" id=2]
@@ -7,7 +7,7 @@
 [ext_resource path="res://Enemies/Slime/Slime.tscn" type="PackedScene" id=5]
 [ext_resource path="res://UI/Analog/analog.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/Background.png" type="Texture" id=7]
-[ext_resource path="res://UI/Analog/small_circle.png" type="Texture" id=8]
+[ext_resource path="res://UI/Buttons/ButtonDogePressed.png" type="Texture" id=8]
 [ext_resource path="res://World/CliffTileset.png" type="Texture" id=9]
 [ext_resource path="res://World/SandTileset.png" type="Texture" id=10]
 [ext_resource path="res://World/tileset_basic_terrain.png" type="Texture" id=11]
@@ -18,6 +18,11 @@
 [ext_resource path="res://World/LevelOne/Grass.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Menu/Scenes/fade_in/FadeIn.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Objects/Coin.tscn" type="PackedScene" id=18]
+[ext_resource path="res://UI/Buttons/ButtonDoge.png" type="Texture" id=19]
+[ext_resource path="res://UI/Buttons/ButtonBlock.png" type="Texture" id=20]
+[ext_resource path="res://UI/Buttons/ButtonBlockPressed.png" type="Texture" id=21]
+[ext_resource path="res://UI/Buttons/ButtonAttack.png" type="Texture" id=22]
+[ext_resource path="res://UI/Buttons/ButtonAttackPressed.png" type="Texture" id=23]
 
 [sub_resource type="TileSet" id=1]
 0/name = "SandTileset.png 0"
@@ -1191,17 +1196,24 @@ __meta__ = {
 }
 
 [node name="Attack" type="TouchScreenButton" parent="CanvasLayer/AreaRight"]
-position = Vector2( 78.2045, 118.975 )
-scale = Vector2( 0.5, 0.5 )
-normal = ExtResource( 8 )
-pressed = ExtResource( 8 )
+position = Vector2( 81.0999, 109.175 )
+scale = Vector2( 0.625283, 0.625283 )
+normal = ExtResource( 22 )
+pressed = ExtResource( 23 )
 shape = SubResource( 84 )
 
 [node name="Roll" type="TouchScreenButton" parent="CanvasLayer/AreaRight"]
-position = Vector2( 119.479, 83.9688 )
-scale = Vector2( 0.25, 0.25 )
-normal = ExtResource( 8 )
+position = Vector2( 111.684, 65.0372 )
+scale = Vector2( 0.393843, 0.393843 )
+normal = ExtResource( 19 )
 pressed = ExtResource( 8 )
+shape = SubResource( 85 )
+
+[node name="Block" type="TouchScreenButton" parent="CanvasLayer/AreaRight"]
+position = Vector2( 30.3891, 130.518 )
+scale = Vector2( 0.449524, 0.449524 )
+normal = ExtResource( 20 )
+pressed = ExtResource( 21 )
 shape = SubResource( 85 )
 
 [node name="HealthUI" parent="CanvasLayer" instance=ExtResource( 3 )]
@@ -1228,6 +1240,8 @@ margin_bottom = 200.0
 [connection signal="coin_collected" from="YSort/Coints/Coin" to="YSort/Player" method="_on_Coin_coin_collected"]
 [connection signal="pressed" from="CanvasLayer/AreaRight/Attack" to="YSort/Player" method="_on_Attack_pressed"]
 [connection signal="pressed" from="CanvasLayer/AreaRight/Roll" to="YSort/Player" method="_on_Roll_pressed"]
+[connection signal="pressed" from="CanvasLayer/AreaRight/Block" to="YSort/Player" method="_on_Block_pressed"]
+[connection signal="released" from="CanvasLayer/AreaRight/Block" to="YSort/Player" method="_on_Block_released"]
 [connection signal="fade_finished" from="Camera2D/FadeIn" to="YSort/Player" method="_on_FadeIn_fade_finished"]
 
 [editable path="Camera2D"]

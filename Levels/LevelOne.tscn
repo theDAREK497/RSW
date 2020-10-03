@@ -1,4 +1,4 @@
-[gd_scene load_steps=109 format=2]
+[gd_scene load_steps=110 format=2]
 
 [ext_resource path="res://World/LevelOne/TreeBlocks.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/LevelOne/Trees.tscn" type="PackedScene" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://UI/Buttons/ButtonBlockPressed.png" type="Texture" id=21]
 [ext_resource path="res://UI/Buttons/ButtonAttack.png" type="Texture" id=22]
 [ext_resource path="res://UI/Buttons/ButtonAttackPressed.png" type="Texture" id=23]
+[ext_resource path="res://Enemies/Wolf/Samurai.tscn" type="PackedScene" id=24]
 
 [sub_resource type="TileSet" id=1]
 0/name = "SandTileset.png 0"
@@ -1170,11 +1171,8 @@ value = 1
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="AreaLeft" type="Control" parent="CanvasLayer"]
-anchor_top = 0.5
-anchor_bottom = 0.5
-margin_top = -90.0
 margin_right = 160.0
-margin_bottom = 90.0
+margin_bottom = 180.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1188,9 +1186,11 @@ _name = "Left_Analog"
 
 [node name="AreaRight" type="Control" parent="CanvasLayer"]
 anchor_left = 1.0
+anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -160.0
+margin_top = -180.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1236,6 +1236,9 @@ margin_left = -300.0
 margin_top = -300.0
 margin_right = 200.0
 margin_bottom = 200.0
+
+[node name="SamuraiBoss" parent="." instance=ExtResource( 24 )]
+position = Vector2( 177.703, 68.3359 )
 [connection signal="body_entered" from="YSort/LvlExit" to="YSort/Player" method="_on_Area2D_body_entered" binds= [ "res://Levels/LevelVillage.tscn" ]]
 [connection signal="coin_collected" from="YSort/Coints/Coin" to="YSort/Player" method="_on_Coin_coin_collected"]
 [connection signal="pressed" from="CanvasLayer/AreaRight/Attack" to="YSort/Player" method="_on_Attack_pressed"]

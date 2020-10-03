@@ -1,1 +1,4 @@
 .import
+*.import
+.git
+debug.log

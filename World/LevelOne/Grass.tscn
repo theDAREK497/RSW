@@ -1,122 +1,128 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://World/Grass.gd" type="Script" id=1]
 [ext_resource path="res://World/Grass.tscn" type="PackedScene" id=2]
 
 [node name="Grass" type="YSort"]
 
-[node name="Grass" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass" parent="." instance=ExtResource( 2 )]
 position = Vector2( 48, 144 )
-script = ExtResource( 1 )
 
-[node name="Grass30" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass30" parent="." instance=ExtResource( 2 )]
 position = Vector2( 500.346, 115.238 )
-script = ExtResource( 1 )
 
-[node name="Grass31" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass31" parent="." instance=ExtResource( 2 )]
 position = Vector2( 490.616, 169.907 )
-script = ExtResource( 1 )
 
-[node name="Grass32" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass32" parent="." instance=ExtResource( 2 )]
 position = Vector2( 429.925, 169.907 )
-script = ExtResource( 1 )
 
-[node name="Grass33" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass33" parent="." instance=ExtResource( 2 )]
 position = Vector2( 462.355, 72.1521 )
-script = ExtResource( 1 )
 
-[node name="Grass34" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass34" parent="." instance=ExtResource( 2 )]
 position = Vector2( 468.842, 43.8912 )
-script = ExtResource( 1 )
 
-[node name="Grass35" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass35" parent="." instance=ExtResource( 2 )]
 position = Vector2( 518.877, 50.8406 )
-script = ExtResource( 1 )
 
-[node name="Grass36" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass36" parent="." instance=ExtResource( 2 )]
 position = Vector2( 392.398, -104.363 )
-script = ExtResource( 1 )
 
-[node name="Grass38" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass38" parent="." instance=ExtResource( 2 )]
 position = Vector2( 387.302, -168.297 )
-script = ExtResource( 1 )
 
-[node name="Grass39" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass39" parent="." instance=ExtResource( 2 )]
 position = Vector2( 377.573, -235.938 )
-script = ExtResource( 1 )
 
-[node name="Grass41" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass41" parent="." instance=ExtResource( 2 )]
 position = Vector2( 239.073, -62.8126 )
-script = ExtResource( 1 )
 
-[node name="Grass42" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass42" parent="." instance=ExtResource( 2 )]
 position = Vector2( 222.429, -62.8126 )
-script = ExtResource( 1 )
 
-[node name="Grass43" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass43" parent="." instance=ExtResource( 2 )]
 position = Vector2( 239.364, -46.4611 )
-script = ExtResource( 1 )
 
-[node name="Grass44" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass44" parent="." instance=ExtResource( 2 )]
 position = Vector2( 321.706, 32.3763 )
-script = ExtResource( 1 )
 
-[node name="Grass45" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass45" parent="." instance=ExtResource( 2 )]
 position = Vector2( 490.184, -101.939 )
-script = ExtResource( 1 )
 
-[node name="Grass46" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass46" parent="." instance=ExtResource( 2 )]
 position = Vector2( 427.698, -109.531 )
-script = ExtResource( 1 )
 
-[node name="Grass47" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass47" parent="." instance=ExtResource( 2 )]
 position = Vector2( 476.169, -168.513 )
-script = ExtResource( 1 )
 
-[node name="Grass48" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass48" parent="." instance=ExtResource( 2 )]
 position = Vector2( 585.373, -31.8616 )
-script = ExtResource( 1 )
 
-[node name="Grass49" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass49" parent="." instance=ExtResource( 2 )]
 position = Vector2( 471.205, -258.738 )
-script = ExtResource( 1 )
 
-[node name="Grass51" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass51" parent="." instance=ExtResource( 2 )]
 position = Vector2( 518.799, -336.7 )
-script = ExtResource( 1 )
 
-[node name="Grass52" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass52" parent="." instance=ExtResource( 2 )]
 position = Vector2( 517.047, -420.501 )
-script = ExtResource( 1 )
 
-[node name="Grass53" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass53" parent="." instance=ExtResource( 2 )]
 position = Vector2( 473.541, -403.273 )
-script = ExtResource( 1 )
 
-[node name="Grass54" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass54" parent="." instance=ExtResource( 2 )]
 position = Vector2( 480.549, -342.539 )
-script = ExtResource( 1 )
 
-[node name="Grass55" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass55" parent="." instance=ExtResource( 2 )]
 position = Vector2( 623.04, -357.431 )
-script = ExtResource( 1 )
 
-[node name="Grass56" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass56" parent="." instance=ExtResource( 2 )]
 position = Vector2( 623.04, -341.371 )
-script = ExtResource( 1 )
 
-[node name="Grass57" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass57" parent="." instance=ExtResource( 2 )]
 position = Vector2( 639.975, -341.955 )
-script = ExtResource( 1 )
 
-[node name="Grass58" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass58" parent="." instance=ExtResource( 2 )]
 position = Vector2( 550.626, -511.894 )
-script = ExtResource( 1 )
 
-[node name="Grass59" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Grass59" parent="." instance=ExtResource( 2 )]
 position = Vector2( 552.962, -581.972 )
-script = ExtResource( 1 )
-6, -741.983 )
+
+[node name="Grass60" parent="." instance=ExtResource( 2 )]
+position = Vector2( 702.169, -638.618 )
+
+[node name="Grass65" parent="." instance=ExtResource( 2 )]
+position = Vector2( 558.218, -699.644 )
+
+[node name="Grass66" parent="." instance=ExtResource( 2 )]
+position = Vector2( 492.228, -744.61 )
+
+[node name="Grass67" parent="." instance=ExtResource( 2 )]
+position = Vector2( 810.79, -523.865 )
+
+[node name="Grass68" parent="." instance=ExtResource( 2 )]
+position = Vector2( 839.113, -514.23 )
+
+[node name="Grass69" parent="." instance=ExtResource( 2 )]
+position = Vector2( 863.932, -535.253 )
+
+[node name="Grass70" parent="." instance=ExtResource( 2 )]
+position = Vector2( 886.999, -614.091 )
+
+[node name="Grass71" parent="." instance=ExtResource( 2 )]
+position = Vector2( 882.62, -572.044 )
+
+[node name="Grass72" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1019.85, -607.375 )
+
+[node name="Grass73" parent="." instance=ExtResource( 2 )]
+position = Vector2( 936.346, -639.494 )
+
+[node name="Grass74" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1018.98, -713.367 )
+
+[node name="Grass75" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1081.76, -741.983 )
 
 [node name="Grass76" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1213.44, -719.499 )
@@ -330,100 +336,3 @@ position = Vector2( 365.825, 216.631 )
 
 [node name="Grass29" parent="." instance=ExtResource( 2 )]
 position = Vector2( 349.936, 168.965 )
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   source( 1 )
-
-[node name="Grass6" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 240, 0 )
-script = ExtResource( 1 )
-
-[node name="Grass7" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 224, 0 )
-script = ExtResource( 1 )
-
-[node name="Grass8" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 272, 112 )
-script = ExtResource( 1 )
-
-[node name="Grass9" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 256, 112 )
-script = ExtResource( 1 )
-
-[node name="Grass10" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 272, 96 )
-script = ExtResource( 1 )
-
-[node name="Grass11" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 160, 112 )
-script = ExtResource( 1 )
-
-[node name="Grass12" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 98.6988, -78.715 )
-script = ExtResource( 1 )
-
-[node name="Grass13" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 63.6209, -22.1816 )
-script = ExtResource( 1 )
-
-[node name="Grass14" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 53.0634, -72.5848 )
-script = ExtResource( 1 )
-
-[node name="Grass15" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 143.653, -114.815 )
-script = ExtResource( 1 )
-
-[node name="Grass16" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 228.113, -111.068 )
-script = ExtResource( 1 )
-
-[node name="Grass17" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 289.414, -15.3703 )
-script = ExtResource( 1 )
-
-[node name="Grass18" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 339.136, -46.0209 )
-script = ExtResource( 1 )
-
-[node name="Grass19" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 366.721, -84.8451 )
-script = ExtResource( 1 )
-
-[node name="Grass20" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 328.238, -86.5479 )
-script = ExtResource( 1 )
-
-[node name="Grass21" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 312.913, -136.27 )
-script = ExtResource( 1 )
-
-[node name="Grass22" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 311.051, 140.951 )
-script = ExtResource( 1 )
-
-[node name="Grass23" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 248.751, 181.927 )
-script = ExtResource( 1 )
-
-[node name="Grass24" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 324.013, 188.617 )
-script = ExtResource( 1 )
-
-[node name="Grass25" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 406.382, 128.825 )
-script = ExtResource( 1 )
-
-[node name="Grass26" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 382.131, 168.547 )
-script = ExtResource( 1 )
-
-[node name="Grass27" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 202.339, 225.829 )
-script = ExtResource( 1 )
-
-[node name="Grass28" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 365.825, 216.631 )
-script = ExtResource( 1 )
-
-[node name="Grass29" type="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 349.936, 168.965 )
-script = ExtResource( 1 )

@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=2]
+[gd_scene load_steps=59 format=2]
 
 [ext_resource path="res://Enemies/Wolf/Idle.png" type="Texture" id=1]
 [ext_resource path="res://Enemies/Wolf/Attack1.png" type="Texture" id=2]
@@ -6,7 +6,7 @@
 [ext_resource path="res://Enemies/Wolf/Attack2.png" type="Texture" id=4]
 [ext_resource path="res://Enemies/Wolf/Death.png" type="Texture" id=5]
 [ext_resource path="res://Enemies/Wolf/Take Hit - white silhouette.png" type="Texture" id=6]
-[ext_resource path="res://Enemies/Wolf/Samurai.gd" type="Script" id=7]
+[ext_resource path="res://Enemies/Wolf/Wolf.gd" type="Script" id=7]
 [ext_resource path="res://Enemies/WanderController.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Stats.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Enemies/PlayerDetectionZone.tscn" type="PackedScene" id=10]
@@ -207,14 +207,16 @@ radius = 157.871
 radius = 5.83415
 height = 8.40465
 
-[sub_resource type="CapsuleShape2D" id=42]
-radius = 23.495
-height = 45.8081
+[sub_resource type="CircleShape2D" id=42]
+radius = 30.0
 
 [sub_resource type="CircleShape2D" id=43]
+radius = 30.0
+
+[sub_resource type="CircleShape2D" id=44]
 radius = 12.0908
 
-[node name="SamuraiBoss" type="KinematicBody2D"]
+[node name="Wolf" type="KinematicBody2D"]
 position = Vector2( -0.094471, -0.326151 )
 collision_layer = 16
 collision_mask = 3
@@ -238,7 +240,6 @@ texture = ExtResource( 14 )
 
 [node name="CollisionShape2D" parent="PlayerDetectionArea" index="0"]
 modulate = Color( 0.854902, 0.0784314, 0.172549, 1 )
-position = Vector2( 62.1272, 0.611431 )
 rotation = 1.5708
 shape = SubResource( 40 )
 
@@ -257,30 +258,26 @@ shape = SubResource( 41 )
 
 [node name="HitboxPivot" type="Position2D" parent="."]
 visible = false
-position = Vector2( 0.149891, -21.1347 )
 
 [node name="Hitbox" parent="HitboxPivot" instance=ExtResource( 11 )]
 collision_mask = 2
-damage = 1
 
 [node name="CollisionShape2D" parent="HitboxPivot/Hitbox" index="0"]
 modulate = Color( 0.121569, 0.4, 0.831373, 1 )
-position = Vector2( 41.5779, -10.7685 )
 rotation = 1.5708
 shape = SubResource( 42 )
 
 [node name="HitboxRange" type="Position2D" parent="."]
-position = Vector2( 0.149891, -21.1347 )
 
 [node name="HitboxRange" parent="HitboxRange" instance=ExtResource( 11 )]
 collision_mask = 4
+damage = 1
 
 [node name="CollisionShape2D" parent="HitboxRange/HitboxRange" index="0"]
 modulate = Color( 0.337255, 0.756863, 0.0784314, 1 )
 self_modulate = Color( 0.631373, 0.0705882, 0.0705882, 1 )
-position = Vector2( 40.634, 0.557976 )
 rotation = 1.5708
-shape = SubResource( 42 )
+shape = SubResource( 43 )
 disabled = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
@@ -295,7 +292,7 @@ collision_layer = 8
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
 modulate = Color( 0.0837, 0.93, 0.22475, 1 )
 position = Vector2( -0.142395, -9.54056 )
-shape = SubResource( 43 )
+shape = SubResource( 44 )
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
 [connection signal="frame_changed" from="AnimatedSprite" to="." method="_on_AnimatedSprite_frame_changed"]
 [connection signal="body_entered" from="HitboxPivot/Hitbox" to="HitboxPivot/Hitbox" method="_on_Hitbox_body_entered"]

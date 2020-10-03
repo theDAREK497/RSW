@@ -22,6 +22,7 @@ var state = CHASE
 var velocity = Vector2.ZERO
 var facingDirection = 0
 var facingDirectionFlag = "Right"
+var readyTimer : float
 
 onready var sprite = $AnimatedSprite
 onready var stats = $Stats
@@ -41,6 +42,7 @@ func _ready():
 func _physics_process(delta):
 	knockback = knockback.move_toward(Vector2.ZERO, FRICTION * delta)
 	knockback = move_and_slide(knockback)
+	readyTimer += 1
 	
 	numFlag += 1
 	
@@ -97,9 +99,14 @@ func chaseState(delta):
 	sprite.flip_h = velocity.x < 0
 	facingDirection = velocity.x
 
-func attackState():
-	velocity = Vector2.ZERO
-	sprite.play("Attack")
+func attackState():	
+	if (readyTimer >= 100):
+		readyTimer = 0
+		velocity = Vector2.ZERO
+		sprite.play("Attack")
+	else:
+		velocity = Vector2.ZERO
+		#sprite.play("Idle")
 
 func sufferDamageState():
 	print("Entered sufferDamageState(): ", numFlag)
@@ -126,15 +133,15 @@ func accelerateTowardsPoint(point, delta):
 	velocity = velocity.move_toward(direction * MAX_SPEED, ACCELERATION * delta)
 	
 	#sprite.flip_h = velocity.x < 0
-	if (samuraiShouldChangeDirection() and sprite.flip_h):
+	if (enemyShouldChangeDirection() and sprite.flip_h):
 		hitRangeCollision.position *= Vector2(-1,1)
 		playerDetectionAreaCollision.position *= Vector2(-1,1)
 		hitboxRange.position *= Vector2(-1,1)
 		changeFlag()
 
-#Returns TRUE if the samurai moves towards a direction 
+#Returns TRUE if the enemy moves towards a direction 
 #that he wasn't already looking at
-func samuraiShouldChangeDirection() -> bool:
+func enemyShouldChangeDirection() -> bool:
 	return (velocity.x < facingDirection and facingDirectionFlag != "Left") or (
 		velocity.x > facingDirection and facingDirectionFlag != "Right")
 
@@ -145,7 +152,7 @@ func changeFlag():
 	else:
 		facingDirectionFlag = "Left"
 
-#If the samurai can see the player, change the state to CHASE
+#If the enemy can see the player, change the state to CHASE
 #canSeePlayer() returns true when the player enters the playerDetectionArea
 func seekPlayer():
 	if playerDetectionArea.can_see_player():
@@ -157,7 +164,7 @@ func pickRandomState(stateList):
 	return stateList.pop_front()
 
 #Destroy the object, only when the AnimatedSprite emits the signal animation_finished()
-func destroySamurai():
+func destroyEnemy():
 	queue_free()
 	var enemyDeathEffect = EnemyDeathEffect.instance()
 	get_parent().add_child(enemyDeathEffect)
@@ -165,9 +172,9 @@ func destroySamurai():
 
 func _on_Hurtbox_area_entered(area):
 	stats.health -= area.damage
-	knockback = area.knockbackVector * 120
-	hurtbox.createHitEffect()
-	hurtbox.startInvincibility(0.3)
+	knockback = area.knockback_vector * 120
+	hurtbox.create_hit_effect()
+	hurtbox.start_invincibility(0.3)
 
 func _on_Stats_noHealth():
 	sprite.stop()
@@ -194,7 +201,7 @@ func _on_AnimatedSprite_animation_finished():
 	if (stats.health > 0):
 		state = IDLE
 	else:
-		destroySamurai()
+		destroyEnemy()
 
 #in the fourth frame of the Attack animaton, 
 #enable the hitBox to deal damage to the player

@@ -23,7 +23,7 @@
 [ext_resource path="res://UI/Buttons/ButtonBlockPressed.png" type="Texture" id=21]
 [ext_resource path="res://UI/Buttons/ButtonAttack.png" type="Texture" id=22]
 [ext_resource path="res://UI/Buttons/ButtonAttackPressed.png" type="Texture" id=23]
-[ext_resource path="res://Enemies/Wolf/Samurai.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Enemies/Wolf/Wolf.tscn" type="PackedScene" id=24]
 
 [sub_resource type="TileSet" id=1]
 0/name = "SandTileset.png 0"

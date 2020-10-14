@@ -80,51 +80,51 @@ atlas = ExtResource( 3 )
 region = Rect2( 1400, 0, 200, 200 )
 
 [sub_resource type="AtlasTexture" id=17]
-atlas = ExtResource( 4 )
+atlas = ExtResource( 2 )
 region = Rect2( 0, 0, 200, 200 )
 
 [sub_resource type="AtlasTexture" id=18]
-atlas = ExtResource( 4 )
+atlas = ExtResource( 2 )
 region = Rect2( 200, 0, 200, 200 )
 
 [sub_resource type="AtlasTexture" id=19]
-atlas = ExtResource( 4 )
+atlas = ExtResource( 2 )
 region = Rect2( 400, 0, 200, 200 )
 
 [sub_resource type="AtlasTexture" id=20]
-atlas = ExtResource( 4 )
+atlas = ExtResource( 2 )
 region = Rect2( 600, 0, 200, 200 )
 
 [sub_resource type="AtlasTexture" id=21]
-atlas = ExtResource( 4 )
+atlas = ExtResource( 2 )
 region = Rect2( 800, 0, 200, 200 )
 
 [sub_resource type="AtlasTexture" id=22]
-atlas = ExtResource( 4 )
+atlas = ExtResource( 2 )
 region = Rect2( 1000, 0, 200, 200 )
 
 [sub_resource type="AtlasTexture" id=23]
-atlas = ExtResource( 2 )
+atlas = ExtResource( 4 )
 region = Rect2( 0, 0, 200, 200 )
 
 [sub_resource type="AtlasTexture" id=24]
-atlas = ExtResource( 2 )
+atlas = ExtResource( 4 )
 region = Rect2( 200, 0, 200, 200 )
 
 [sub_resource type="AtlasTexture" id=25]
-atlas = ExtResource( 2 )
+atlas = ExtResource( 4 )
 region = Rect2( 400, 0, 200, 200 )
 
 [sub_resource type="AtlasTexture" id=26]
-atlas = ExtResource( 2 )
+atlas = ExtResource( 4 )
 region = Rect2( 600, 0, 200, 200 )
 
 [sub_resource type="AtlasTexture" id=27]
-atlas = ExtResource( 2 )
+atlas = ExtResource( 4 )
 region = Rect2( 800, 0, 200, 200 )
 
 [sub_resource type="AtlasTexture" id=28]
-atlas = ExtResource( 2 )
+atlas = ExtResource( 4 )
 region = Rect2( 1000, 0, 200, 200 )
 
 [sub_resource type="AtlasTexture" id=29]
@@ -181,13 +181,13 @@ animations = [ {
 }, {
 "frames": [ SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ) ],
 "loop": false,
-"name": "Attack2",
-"speed": 5.0
+"name": "Attack",
+"speed": 10.0
 }, {
 "frames": [ SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ) ],
 "loop": false,
-"name": "Attack",
-"speed": 10.0
+"name": "Attack2",
+"speed": 5.0
 }, {
 "frames": [ SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ) ],
 "loop": false,
@@ -201,7 +201,7 @@ animations = [ {
 } ]
 
 [sub_resource type="CircleShape2D" id=40]
-radius = 157.871
+radius = 80.0
 
 [sub_resource type="CapsuleShape2D" id=41]
 radius = 5.83415
@@ -224,19 +224,18 @@ script = ExtResource( 7 )
 MAX_SPEED = 100
 FRICTION = 300
 
+[node name="ShadowSprite" type="Sprite" parent="."]
+position = Vector2( -1.9148e-06, 1.19209e-07 )
+scale = Vector2( 2.82867, 1 )
+texture = ExtResource( 14 )
+
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -0.225939, -21.437 )
 frames = SubResource( 39 )
 animation = "Idle"
-frame = 2
-playing = true
-
-[node name="ShadowSprite" type="Sprite" parent="."]
-position = Vector2( -1.90735e-06, 0 )
-scale = Vector2( 2.82867, 1 )
-texture = ExtResource( 14 )
 
 [node name="PlayerDetectionArea" parent="." instance=ExtResource( 10 )]
+visible = false
 
 [node name="CollisionShape2D" parent="PlayerDetectionArea" index="0"]
 modulate = Color( 0.854902, 0.0784314, 0.172549, 1 )

@@ -46,7 +46,6 @@ func _ready():
 	self.max_armor = PlayerStats.max_armor
 	self.armor = PlayerStats.armor
 	self.coins = PlayerStats.coins
-	print(PlayerStats.coins)
 	# warning-ignore:return_value_discarded
 	PlayerStats.connect("health_changed", self, "set_hearts")
 	# warning-ignore:return_value_discarded

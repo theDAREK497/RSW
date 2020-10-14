@@ -104,8 +104,8 @@ func attackState():
 		readyTimer = 0
 		velocity = Vector2.ZERO
 		sprite.play("Attack")
-	else:
-		velocity = Vector2.ZERO
+	#else:
+		#velocity = Vector2.ZERO
 		#sprite.play("Idle")
 
 func sufferDamageState():

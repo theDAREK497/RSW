@@ -126,3 +126,8 @@ block={
 
 translations=PoolStringArray( "res://Translation/localization.ru.translation", "res://Translation/localization.en.translation" )
 locale_filter=[ 0, [  ] ]
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true

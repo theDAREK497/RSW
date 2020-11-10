@@ -965,7 +965,7 @@ remote_path = NodePath("../../../Camera2D")
 position = Vector2( 72, 56 )
 
 [node name="Bush2" parent="YSort/Bushes" instance=ExtResource( 15 )]
-position = Vector2( 104, 104 )
+position = Vector2( 71.0367, 116.25 )
 
 [node name="Bush3" parent="YSort/Bushes" instance=ExtResource( 15 )]
 position = Vector2( 264, 56 )
@@ -1816,7 +1816,7 @@ margin_right = 200.0
 margin_bottom = 200.0
 
 [node name="SamuraiBoss" parent="." instance=ExtResource( 24 )]
-position = Vector2( 163.935, 59.5142 )
+position = Vector2( -130.596, -86.1619 )
 [connection signal="body_entered" from="YSort/LvlExit" to="YSort/Player" method="_on_Area2D_body_entered" binds= [ "res://Levels/LevelVillage.tscn" ]]
 [connection signal="coin_collected" from="YSort/Coints/Coin" to="YSort/Player" method="_on_Coin_coin_collected"]
 [connection signal="pressed" from="CanvasLayer/AreaRight/Attack" to="YSort/Player" method="_on_Attack_pressed"]

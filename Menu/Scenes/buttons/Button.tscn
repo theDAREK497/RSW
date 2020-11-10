@@ -1,16 +1,17 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Menu/Scenes/buttons/MenuButton.gd" type="Script" id=1]
-[ext_resource path="res://Menu/Assets/fonts/Montserrat-ExtraBold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://UI/Fonts/TomsHandwritten.ttf" type="DynamicFontData" id=2]
 
 [sub_resource type="DynamicFont" id=1]
-size = 40
+size = 15
+outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 2 )
 
 [node name="MenuButton" type="Button"]
-margin_right = 200.0
-margin_bottom = 60.0
-rect_min_size = Vector2( 360, 60 )
+margin_right = 100.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 100, 20 )
 flat = true
 script = ExtResource( 1 )
 __meta__ = {
@@ -19,15 +20,19 @@ __meta__ = {
 scene_to_load = "Null"
 
 [node name="Label" type="Label" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_right = 1.7992
+anchor_bottom = 0.55
+margin_right = -79.92
+margin_bottom = 9.0
 size_flags_horizontal = 2
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color_shadow = Color( 1, 0.596078, 0, 1 )
+custom_colors/font_color = Color( 0.835294, 0.835294, 0.835294, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 0
-custom_constants/shadow_offset_y = 5
+custom_constants/shadow_offset_y = 2
 text = "Label"
+align = 1
 uppercase = true
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": true
 }

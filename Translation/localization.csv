@@ -1,4 +1,6 @@
 id,en,ru
-strPlay,Play,Играть
+strNewGame,New Game,Новая игра
+strContinue,Continue,Продолжить
+strTomb,Tomb,Гробница
 strSettings,Settings,Настройки
 strExit,Exit,Выход

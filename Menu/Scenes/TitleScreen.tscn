@@ -16,23 +16,46 @@ __meta__ = {
 }
 
 [node name="Buttons" type="VBoxContainer" parent="."]
-anchor_right = 1.0
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
+margin_left = -49.2509
+margin_top = -126.114
+margin_right = 50.7491
+margin_bottom = -10.1136
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="PLay" parent="Buttons" instance=ExtResource( 2 )]
-margin_right = 360.0
+[node name="New Game" parent="Buttons" instance=ExtResource( 2 )]
 scene_to_load = "res://Levels/LevelOne.tscn"
-scene_name = "strPlay"
+scene_name = "strNewGame"
+
+[node name="Continue" parent="Buttons" instance=ExtResource( 2 )]
+margin_top = 24.0
+margin_bottom = 44.0
+disabled = true
+scene_to_load = "res://Levels/LevelOne.tscn"
+scene_name = "strContinue"
+
+[node name="Tomb" parent="Buttons" instance=ExtResource( 2 )]
+margin_top = 48.0
+margin_bottom = 68.0
+scene_to_load = "res://Levels/LevelTomb.tscn"
+scene_name = "strTomb"
 
 [node name="Settings" parent="Buttons" instance=ExtResource( 2 )]
-margin_top = 64.0
-margin_right = 360.0
-margin_bottom = 124.0
+margin_top = 72.0
+margin_bottom = 92.0
 scene_to_load = "res://Menu/Scenes/SettingsScreen.tscn"
 scene_name = "strSettings"
 
+[node name="Exit" parent="Buttons" instance=ExtResource( 2 )]
+margin_top = 96.0
+margin_bottom = 116.0
+scene_name = "strExit"
+
 [node name="FadeIn" parent="." instance=ExtResource( 8 )]
+[connection signal="pressed" from="Buttons/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]

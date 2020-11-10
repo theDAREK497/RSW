@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=2]
+[gd_scene load_steps=60 format=2]
 
 [ext_resource path="res://Enemies/Wolf/Idle.png" type="Texture" id=1]
 [ext_resource path="res://Enemies/Wolf/Attack1.png" type="Texture" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://Overlap/Hurtbox.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Overlap/SoftCollision.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Shadows/SmallShadow.png" type="Texture" id=14]
+[ext_resource path="res://Enemies/Wolf/wolfsheet.png" type="Texture" id=15]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
@@ -228,6 +229,13 @@ FRICTION = 300
 position = Vector2( -1.9148e-06, 1.19209e-07 )
 scale = Vector2( 2.82867, 1 )
 texture = ExtResource( 14 )
+
+[node name="Sprite" type="Sprite" parent="."]
+visible = false
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 15 )
+vframes = 10
+hframes = 10
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -0.225939, -21.437 )
